@@ -22,10 +22,10 @@ axios.get(URL)
     <main className='bg-[url("/images/fondo.png")] min-h-screen'>
       <section className='relative'>
          <div>
-          <img className='absolute top-1/3 left-1/2 -translate-x-[50%]' src='/images/nombre.png' alt=''/>
+          <img id='nombre' className='absolute top-1/4 left-1/2 -translate-x-[50%]' src='/images/nombre.png' alt=''/>
         </div>
-        <div className='m-auto'>
-      <img className='mx-auto' src='/images/portal.png'/></div>
+        <div>
+      <img id='portal' className='max-w-40 mx-auto' src='/images/portal.gif'/></div>
    </section>
    <Location location={location} setLocation={setLocation}/>
    <Residentlist location={location} residents={location?.residents}/>
